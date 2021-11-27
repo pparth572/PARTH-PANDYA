@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPwdmng"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/pwd_manager">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Website Name/URL:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"/>
+
+    <EditText
+        android:id="@+id/ed_Wname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Website Name/Url" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Name:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"/>
+
+
+    <EditText
+        android:id="@+id/ed_uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="User Name"
+        android:layout_marginTop="10dp"
+        android:gravity="start|top"
+        android:inputType="text" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"/>
+    <EditText
+        android:id="@+id/ed_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        >
+        <Button
+            android:id="@+id/btn_savepwd"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delete">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

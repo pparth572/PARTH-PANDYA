@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDocument"
+    android:orientation="vertical">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfviewer"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+    </com.github.barteksc.pdfviewer.PDFView>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/btn_choose_doc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="Open File" />
+    <Button
+        android:id="@+id/btn_savedoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Doc" />
+
+</LinearLayout>
+
+
+</LinearLayout>
